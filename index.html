@@ -23,23 +23,23 @@
             background: white;
             max-width: 8.5in;
             margin: 0 auto;
-            padding: 20px;
+            padding: 18px;
         }
 
         .left-column h1 {
             font-size: 2.2em;
             color: #2c5aa0;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .contact-info {
             font-size: 12px;
-            line-height: 1.6;
-            margin-bottom: 20px;
+            line-height: 1.5;
+            margin-bottom: 18px;
         }
 
         .contact-info div {
-            margin-bottom: 3px;
+            margin-bottom: 2px;
         }
 
         .contact-info a {
@@ -50,32 +50,32 @@
         .main-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            margin-bottom: 16px;
+            gap: 22px;
+            margin-bottom: 14px;
         }
 
         .section {
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
 
         .section h2 {
             color: #2c5aa0;
             font-size: 1.3em;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
+            padding-bottom: 4px;
         }
 
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 7px;
         }
 
         .skill-tag {
             background: #f0f4f8;
             color: #2c5aa0;
-            padding: 4px 10px;
+            padding: 4px 9px;
             border-radius: 15px;
             font-size: 12px;
             border: 1px solid #2c5aa0;
@@ -84,13 +84,13 @@
         .projects-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 15px;
+            gap: 13px;
         }
 
         .project-card {
             border: 2px solid #e0e6ed;
             border-radius: 8px;
-            padding: 15px;
+            padding: 13px;
             background: #fafbfc;
             transition: all 0.3s ease;
             text-align: center;
@@ -100,11 +100,11 @@
         }
 
         .project-icon {
-            width: 50px;
-            height: 50px;
+            width: 48px;
+            height: 48px;
             border-radius: 50%;
-            margin-bottom: 10px;
-            font-size: 24px;
+            margin-bottom: 9px;
+            font-size: 23px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -121,25 +121,46 @@
         .project-title {
             font-weight: bold;
             color: #2c5aa0;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
 
         .project-description {
             font-size: 12px;
             color: #666;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .project-links {
-            display: flex;
-            gap: 10px;
-            font-size: 11px;
-            justify-content: center;
+            font-size: 13px;
+            text-align: left;
+            line-height: 1.8;
+            width: 100%;
+            margin-top: 8px;
         }
 
-        .project-links a {
+        .project-link {
+            display: block;
+            margin-bottom: 3px;
+            padding: 4px 8px;
+            background: #f8f9fa;
+            border: 1px solid #2c5aa0;
+            border-radius: 3px;
             color: #2c5aa0;
             text-decoration: none;
+            font-weight: 600;
+            font-family: 'Courier New', monospace;
+        }
+
+        .project-link.live {
+            background: #e8f2ff;
+            border-color: #2c5aa0;
+            color: #1a4480;
+        }
+
+        .project-link.code {
+            background: #f0f4f8;
+            border-color: #5a7fa0;
+            color: #2c5aa0;
         }
 
         .full-width {
@@ -147,14 +168,14 @@
         }
 
         .experience-item, .education-item {
-            margin-bottom: 10px;
+            margin-bottom: 9px;
         }
 
         .experience-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
 
         .job-title {
@@ -178,7 +199,7 @@
         }
 
         .experience-details li {
-            margin-bottom: 3px;
+            margin-bottom: 2px;
         }
 
         @media print {
@@ -189,6 +210,21 @@
             .project-card:hover {
                 border-color: #e0e6ed;
                 box-shadow: none;
+            }
+
+            .project-link {
+                border: 1.5px solid #2c5aa0;
+                font-weight: 700;
+            }
+
+            .project-link.live {
+                background: #e8f2ff;
+                border-color: #2c5aa0;
+            }
+
+            .project-link.code {
+                background: #f0f4f8;
+                border-color: #5a7fa0;
             }
         }
     </style>
@@ -201,24 +237,22 @@
                 <div class="contact-info">
                     <div>📍 Redlands, CA</div>
                     <div>📞 (323) 304-8230</div>
-                    <div>✉️ <a href="mailto:davidkttran@gmail.com">davidkttran@gmail.com</a></div>
-                    <div>🔗 <a href="https://github.com/moocifur">github.com/moocifur</a></div>
-                    <div>🔗 <a href="https://moocifur.github.io/portfolio/">moocifur.github.io/portfolio/</a></div>
+                    <div>✉️ davidkttran@gmail.com</div>
+                    <div>🔗 github.com/moocifur</div>
+                    <div>🔗 davidtran.netlify.app</div>
                 </div>
             </div>
 
             <div class="section">
-                <h2>📄 Professional Summary</h2>
+                <h2>📄 About Me</h2>
                 <p style="font-size: 12px; line-height: 1.4;">
-                    Aspiring Web Developer with hands-on experience 
-building projects using HTML, CSS, JavaScript, and currently learning 
-React. Focused on writing clean, maintainable code 
-and continually improving through consistent 
-learning and practice. Drawing on years of 
-professional experience in a variety of environments, 
-I understand the value of practical solutions and 
-teamwork. Motivated by a strong work ethic and a 
-commitment to becoming a reliable, contributing developer.
+                    I'm a developer whose main goal is to create value for people. 
+                    I respect great interfaces for reasons like my mother, who—not 
+                    being a tech-savvy native English speaker—with the help of code, 
+                    gets to connect with people, find connections with her loved ones, 
+                    and gets to see how amazing our world is through her phone. I'm 
+                    here to be part of the people who create these digital roads that 
+                    connect, help, and create value for people.
                 </p>
             </div>
         </div>
@@ -230,21 +264,23 @@ commitment to becoming a reliable, contributing developer.
                     <span class="skill-tag">HTML</span>
                     <span class="skill-tag">CSS</span>
                     <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">DOM Manipulation</span>
-                    <span class="skill-tag">Async/Await</span>
-                    <span class="skill-tag">Fetch API</span>
-                    <span class="skill-tag">Webpack</span>
-                    <span class="skill-tag">Git/GitHub</span>
-                    <span class="skill-tag">Chrome DevTools</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Claude</span>
+                    <span class="skill-tag">Tailwind</span>
+                    <span class="skill-tag">APIs</span>
+                    <span class="skill-tag">NPM</span>
+                    <span class="skill-tag">GitHub</span>
                 </div>
             </div>
 
             <div class="section">
                 <h2>📚 In Progress</h2>
                 <div class="skills-list">
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">TypeScript</span>
                     <span class="skill-tag">Databases</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">ArcGIS</span>
+                    <span class="skill-tag">Shopify</span>
                 </div>
             </div>
         </div>
@@ -258,8 +294,8 @@ commitment to becoming a reliable, contributing developer.
                 <div class="project-title">Lane Orthodontics Website</div>
                 <div class="project-description">Professional practice website with responsive design, location switching, and appointment booking</div>
                 <div class="project-links">
-                    <a href="https://moocifur.github.io/lane-orthodontics">🔗 Live Demo</a>
-                    <a href="https://github.com/moocifur/lane-orthodontics">📁 GitHub</a>
+                    <a href="https://laneorthodontics.com" class="project-link live">🌐 laneorthodontics.com</a>
+                    <a href="https://github.com/moocifur/lane-orthodontics" class="project-link code">💻 github.com/moocifur/lane-orthodontics</a>
                 </div>
             </div>
             
@@ -268,54 +304,44 @@ commitment to becoming a reliable, contributing developer.
                 <div class="project-title">David's Barbook</div>
                 <div class="project-description">Cocktail recipe app with search, filtering, and favorites using localStorage</div>
                 <div class="project-links">
-                    <a href="https://moocifur.github.io/barbook">🔗 Live Demo</a>
-                    <a href="https://github.com/moocifur/barbook">📁 GitHub</a>
+                    <a href="https://moocifur.github.io/barbook" class="project-link live">🌐 moocifur.github.io/barbook</a>
+                    <a href="https://github.com/moocifur/barbook" class="project-link code">💻 github.com/moocifur/barbook</a>
                 </div>
             </div>
             
             <div class="project-card">
-                <div class="project-icon">🌤️</div>
-                <div class="project-title">Weather Dashboard</div>
-                <div class="project-description">Real-time weather app with API integration, forecasts, and dynamic themes</div>
+                <div class="project-icon">🚛</div>
+                <div class="project-title">Diesel Injection Website</div>
+                <div class="project-description">Professional business website with responsive design, dynamic testimonials, and contact forms using React</div>
                 <div class="project-links">
-                    <a href="https://moocifur.github.io/weather-app-one">🔗 Live Demo</a>
-                    <a href="https://github.com/moocifur/weather-app-one">📁 GitHub</a>
+                    <a href="https://dieselinjectionservice.com" class="project-link live">🌐 dieselinjectionservice.com</a>
+                    <a href="https://github.com/Moocifur/diesel-injection-service" class="project-link code">💻 github.com/Moocifur/diesel-injection-service</a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="section full-width">
-        <h2>💼 Work Experience</h2>
-        <div class="experience-item">
-            <div class="experience-header">
-                <div>
-                    <span class="job-title">Bartender</span>
-                    <span class="company-name">- Basin 141, Montrose, CA</span>
-                </div>
-                <span class="date-range">2017 - 2024</span>
+    <h2>💼 Work Experience</h2>
+    <div class="experience-item">
+        <div class="experience-header">
+            <div>
+                <span class="job-title">Web Developer</span>
+                <span class="company-name">- Freelance</span>
             </div>
-            <ul class="experience-details">
-                <li>Managed complex multi-system workflows under high-pressure conditions</li>
-                <li>Troubleshot POS system issues and streamlined operational processes</li>
-                <li>Collaborated with team members to deliver consistent user experiences</li>
-            </ul>
+            <span class="date-range">2024 – 2025</span>
         </div>
-
-        <div class="experience-item">
-            <div class="experience-header">
-                <div>
-                    <span class="job-title">Bartender</span>
-                    <span class="company-name">- Various Establishments</span>
-                </div>
-                <span class="date-range">2009 - 2017</span>
-            </div>
-            <ul class="experience-details">
-                <li>Montage Beverly Hills - Upscale service & menu development</li>
-                <li>The Famous - Specialized craft beverage operations</li>
-            </ul>
-        </div>
+        <ul class="experience-details">
+            <li>Created professional Diesel Injection website with Shopify</li>
+            <li>Redesigned orthodontics website connecting Rhinogram and theme switching for different locations</li>
+            <li>Websites fully deployed</li>
+            <li>Took time to learn about clients' products and services to understand their goals</li>
+            <li>Diligent about finding solutions for problems that arise</li>
+            <li>Picked up and learned any tools needed for the job.</li>
+            <li><em>Previously worked as a bartender with references available upon request</em></li>
+        </ul>
     </div>
+</div>
 
     <div class="section full-width">
         <h2>🎓 Education</h2>
@@ -325,11 +351,11 @@ commitment to becoming a reliable, contributing developer.
                     <span class="job-title">The Odin Project</span>
                     <span class="company-name">- Full Stack JavaScript Path</span>
                 </div>
-                <span class="date-range">2024 - Present</span>
+                <span class="date-range">2022 - Present</span>
             </div>
             <ul class="experience-details">
-                <li>Completed: HTML/CSS Foundations, JavaScript Fundamentals, DOM Manipulation</li>
-                <li>Self-directed learning with hands-on projects and problem-solving focus</li>
+                <li>Completed: Full Front-End curriculum</li>
+                <li>Currently learning Databases and Node.js to expand my usability</li>
             </ul>
         </div>
     </div>
